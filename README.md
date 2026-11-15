@@ -17,3 +17,5 @@ https://github.com/lnguyenhoang42/scheduled-announcer/blob/main/modoverrides.lua
 - Announce when hound/worm happen.
 - Announce when rain happen and end.
 - Announce cave nightmare phase and cycle.
+
+Due to the nature of the mod and lack of functional on client it will take some time to properly make a client-only version.
