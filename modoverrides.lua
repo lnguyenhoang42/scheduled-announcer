@@ -12,7 +12,7 @@ return {
             sa_announce_hound = true,
             sa_near_player_radius = 50,
             sa_when_rain_end = true,
-	    sa_announce_nightmare = true,
+	    	sa_announce_nightmare = true,
         }
     }
 }   
