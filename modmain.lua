@@ -706,6 +706,7 @@ AddPrefabPostInit("world", function(inst)
         end
     end
 
+	on_phase_change(nil, GLOBAL.TheWorld.state.nightmarephase)
     inst:WatchWorldState("nightmarephase", on_phase_change)
     logSystemLoaded("Nightmare cycle predictor")
 end)
