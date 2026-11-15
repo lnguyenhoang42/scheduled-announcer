@@ -401,15 +401,49 @@ AddPrefabPostInit("world", function(inst)
 end)
 
 AddPrefabPostInit("lunarrift_portal", function(inst)
-    if cfg.sa_announce_rift then
-        announce("Lunar rift is open!")
-    end
+    if not cfg.sa_announce_rift then return end
+
+    announce("Lunar rift is open!")
+
+    -- Announce when it will close
+    inst:DoTaskInTime(5, function()
+        local timer = inst.components.timer
+        if timer and timer.GetTimeLeft then
+            local t = timer:GetTimeLeft("close")
+            if type(t) == "number" and t > 0 then
+                local day = get_day_in_seconds(t)
+                announce(string.format("Lunar rift will close on day %d (%s)", day, formatTime(t)))
+            end
+        end
+    end)
+
+    -- Announce when it actually closes
+    inst:ListenForEvent("onremove", function()
+        announce("Lunar rift has closed!")
+    end)
 end)
 
 AddPrefabPostInit("shadowrift_portal", function(inst)
-    if cfg.sa_announce_rift then
-        announce("Shadow rift is open!")
-    end
+    if not cfg.sa_announce_rift then return end
+
+    announce("Shadow rift is open!")
+
+    -- Announce when it will close
+    inst:DoTaskInTime(5, function()
+        local timer = inst.components.timer
+        if timer and timer.GetTimeLeft then
+            local t = timer:GetTimeLeft("close")
+            if type(t) == "number" and t > 0 then
+                local day = get_day_in_seconds(t)
+                announce(string.format("Shadow rift will close on day %d (%s)", day, formatTime(t)))
+            end
+        end
+    end)
+
+    -- Announce when it actually closes
+    inst:ListenForEvent("onremove", function()
+        announce("Shadow rift has closed!")
+    end)
 end)
 
 -- ============================================================
