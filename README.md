@@ -8,7 +8,7 @@ https://github.com/lnguyenhoang42/scheduled-announcer/blob/main/modoverrides.lua
 ### Can be disabled via config if too cluttered.
 - Announce when a boss respawn.
 - Announce when a boss spawn.
-  - Some boss are have limited distance only trigger like spider queen and treeguard due to how many can spawn in a single session.
+  - Some boss have a limited-distance-only trigger like spider queen and treeguard due to how many can spawn in a single session.
 - Announces full moon, new moon, lunar storm.
 - Announce when rift open/close and opening/closing.
 - Announce when a boss is killed and counting (Limit configuration).
