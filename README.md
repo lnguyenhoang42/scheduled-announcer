@@ -1,5 +1,5 @@
 # scheduled-announcer
-A Don't Starve Together mod to announce important event happening in your world. No cross-combability for DS or DSE.
+A Don't Starve Together server-only mod to announce important event happening in your world. No cross-combability for DS or DSE.
 
 You can find the config here:
 https://github.com/lnguyenhoang42/scheduled-announcer/blob/main/modoverrides.lua
