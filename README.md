@@ -1,3 +1,4 @@
+![Alt](https://raw.githubusercontent.com/lnguyenhoang42/scheduled-announcer/refs/heads/main/images/modicon.png)
 # scheduled-announcer
 A Don't Starve Together server-only mod to announce important event happening in your world. No cross-combability for DS or DSE.
 
