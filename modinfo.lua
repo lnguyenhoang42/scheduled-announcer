@@ -1,8 +1,11 @@
 name = "Scheduled Announcer"
 description = "Announces boss spawns, full moons, rifts, and kill counts"
 author = ""
-version = "1.0.0"
+version = "1.0.1"
 forumthread = ""
+
+icon_atlas = "modicon.xml"
+icon = "modicon.tex"
 
 api_version = 10
 
