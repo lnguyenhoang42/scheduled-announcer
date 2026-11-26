@@ -3,6 +3,8 @@
 A Don't Starve Together server-only mod to announce important event happening in your world. No cross-combability for DS or DSE.
 The workshop page is friend-only because my steam account is limited.
 
+Yes the icon is misspelled but no one gonna notice unless you were told about it.
+
 You can find the config here:
 https://github.com/lnguyenhoang42/scheduled-announcer/blob/main/modoverrides.lua
 
